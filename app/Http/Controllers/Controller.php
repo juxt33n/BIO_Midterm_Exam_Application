@@ -8,14 +8,12 @@ class ProductController extends Controller
 {
     public function showProducts()
     {
-        // Example product array (you can change the content based on your theme)
         $products = [
-            ['name' => 'Smartphone', 'price' => 699],
-            ['name' => 'Laptop', 'price' => 999],
-            ['name' => 'Smartwatch', 'price' => 199]
+            ['name' => 'Xiaomi Smartphone', 'price' => 60000],
+            ['name' => 'Gaming Laptop', 'price' => 40000],
+            ['name' => 'Smartwatch', 'price' => 25000]
         ];
 
-        // Pass products array to the view
         return view('products', ['products' => $products]);
     }
 }
